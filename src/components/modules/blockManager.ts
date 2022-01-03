@@ -648,6 +648,10 @@ export default class BlockManager extends Module {
      */
     this.currentBlockIndex = this._blocks.nodes.indexOf(parentFirstLevelBlock as HTMLElement);
 
+    if( this.currentBlockIndex < 0 ) {
+      return
+    }
+
     /**
      * Update current block active input
      */
