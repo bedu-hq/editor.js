@@ -1,6 +1,6 @@
 {
   "name": "@editorjs/editorjs",
-  "version": "2.22.2",
+  "version": "2.22.2-bedu.1",
   "description": "Editor.js — Native JS, based on API and Open Source",
   "main": "dist/editor.js",
   "types": "./types/index.d.ts",
@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "clear": "rimraf dist && mkdirp dist",
+    "prepare": "yarn build",
     "build": "yarn clear && yarn svg && yarn build:webpack:prod",
     "build:dev": "yarn clear && yarn svg && yarn build:webpack:dev",
     "build:webpack:dev": "webpack --mode development --progress --display-error-details --display-entrypoints --watch",
