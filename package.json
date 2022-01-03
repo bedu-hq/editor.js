@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "clear": "rimraf dist && mkdirp dist",
-    "preinstall": "yarn pull_tools",
+    "prestart": "yarn pull_tools",
     "prepare": "yarn build",
     "build": "yarn clear && yarn svg && yarn build:webpack:prod",
     "build:dev": "yarn clear && yarn svg && yarn build:webpack:dev",
