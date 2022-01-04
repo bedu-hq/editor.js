@@ -1,7 +1,7 @@
 {
   "name": "@editorjs/editorjs",
   "version": "2.22.2-bedu.1",
-  "description": "Editor.js — Native JS, based on API and Open Source",
+  "description": "BEditor.js — Native JS, based on API and Open Source",
   "main": "dist/editor.js",
   "types": "./types/index.d.ts",
   "keywords": [
@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "clear": "rimraf dist && mkdirp dist",
-    "preinstall": "yarn run pull_tools",
+    "install": "yarn pull_tools && yarn install",
     "prepare": "yarn run build",
     "build": "yarn clear && yarn svg && yarn build:webpack:prod",
     "build:dev": "yarn clear && yarn svg && yarn build:webpack:dev",
